@@ -1,0 +1,11 @@
+Write a Java program to evaluate a simple postfix expression where operators and operands are separated by space characters. As for handling postfix expressions, you need a stack and implement it by array handling.
+
+Following methods may be useful for string processing:
+
+exp = sc.nextLine(): read line from the scanner object sc into exp string
+
+exp.split(" "): return space separated words or tokens into an array of strings
+
+Avoid displaying extra characters or input / output prompts while taking input or displaying output, which are otherwise needed for an interactive program.
+
+Note: Once the array implementation is done, you can also refer built-in Stack class (refer AR5.1 for details) for alternative implementation.

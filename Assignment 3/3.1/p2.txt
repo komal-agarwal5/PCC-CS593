@@ -1,0 +1,2 @@
+Write a Java program to input a few numbers, sort those and display maintaining 2 decimal places. Ensure to take inputs only when a number is existing in the input stream. Avoid displaying extra characters or input / output prompts while taking input or displaying output.
+

@@ -1,0 +1,11 @@
+Write a Java program to input marks of 5 courses and display their average marks using 2 decimal places.
+
+Ensure to declare the main class as public. BTW, main class is the class having main() method.
+
+
+
+
+Notes:
+1. Display only the output value as instructed and as showed in the example.
+
+2. Avoid displaying any other extra characters like "Enter marks" while taking input or "Average" etc. displaying output.

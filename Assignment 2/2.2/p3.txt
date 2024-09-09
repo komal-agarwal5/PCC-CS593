@@ -1,0 +1,84 @@
+Imagine a factory with scrap pieces of different shapes. Shapes were categorised under following types:
+
+        1: Circle
+        2: Rectangle
+        3: Triangle
+
+
+Study the partly-developed program carefully for understanding the logic of shape entries, area computation and displaying values. Identify the missing part in the program and write in the answer window. Ensure to display "Ignoring wrong type: x"  where x was the value of invalid type. Ensure to display new line after each output line.
+
+import java.util.Scanner;
+
+// Superclass Shape
+class Shape {
+    double area;
+    void computeArea() { System.out.println("Compute area based on specific shape"); };
+    void displayShape() { System.out.println("Display Shape dimensions with area"); };
+}
+
+// Subclass Circle
+class Circle extends Shape {
+    double r;
+    Circle(double r) { this.r = r; }
+    
+    @Override
+    void computeArea() { super.area = Math.PI * r * r; }
+
+    @Override
+    void displayShape() { System.out.printf("Circle(%.2f) Area: %.2f\n", r, super.area); }
+}
+
+// Subclass Rectangle
+class Rectangle extends Shape {
+    double l, b;
+    Rectangle(double l, double b) { this.l = l; this.b = b; }
+    
+    @Override
+    void computeArea() { super.area = l * b; }
+
+    @Override
+    void displayShape() { System.out.printf("Rectangle(%.2f,%.2f) Area: %.2f\n", l, b, super.area); }
+}
+
+// Subclass Triangle
+class Triangle extends Shape {
+    double h, b;
+    Triangle(double h, double b) { this.h = h; this.b = b; }
+    
+    @Override
+    void computeArea() { super.area = 0.5 * h * b; }
+    
+    @Override
+    void displayShape() { System.out.printf("Triangle(%.2f,%.2f) Area: %.2f\n", h, b, super.area); }
+}
+
+// Main class
+public class Sheets {   
+
+    ?????
+    
+    // main method
+    public static void main( String args[] ) {
+        Shape Shapes[] = new Shape[50];
+        int n, i=0, sheetType;
+        Shape s;
+       
+        Scanner sc = new Scanner(System.in);
+
+        // Loop inputs taking as long as Ctrl-d is not pressed
+        while (sc.hasNextInt()) {
+                        // Input sheet type (1: Circle, 2: Rectangle, 3: Traiangle)
+             sheetType = sc.nextInt();
+            s = createShape(sheetType, sc);    // Create Shape object
+            if (s != null) Shapes[i++] = s;    // Populate into Shapes array
+        }
+
+        n = i-1;                    // No. of sheets
+       
+        for (i=0; i<=n; i++) {
+            System.out.print(i+": ");
+            Shapes[i].displayShape();
+        }       
+       
+    }
+}

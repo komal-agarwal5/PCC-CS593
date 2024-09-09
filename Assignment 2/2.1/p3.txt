@@ -1,0 +1,27 @@
+Study the following program with constructor usage, and write only the missing part in the answer window:
+
+
+
+????   // Your code
+
+public class CourseTest {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String code, name;
+       
+        // Populate course 1 details
+        code = sc.nextLine();    // Input course code   
+        name = sc.nextLine();    // Input course name
+        Course c1 = new Course(code, name); // Parameterised constructor
+    
+        // Populate course 2 details
+        code = sc.nextLine();    // Input course code   
+        name = sc.nextLine();    // Input course name
+       
+        Course c2 = new Course();      // Non-parameterised constructor
+        c2.setCourse(code, name);
+       
+        // Display course details   
+        System.out.printf("Courses:\n%s\n%s\n", c1.getCourse(), c2.getCourse());
+    }
+}

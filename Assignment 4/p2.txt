@@ -1,0 +1,13 @@
+Imagine a factory with scrap pieces of different shapes. 
+
+Compute area based on following valid shape types:
+
+        1: Circle
+        2: Rectangle
+
+
+Quit the program when type is 0 and show "Invalid type" error otherwise.
+
+Study the partly-developed program with Shape interface declaration and outputs for specific shape type with related dimension. 
+
+Identify the missing parts in the program and write the whole program in the answer window. 

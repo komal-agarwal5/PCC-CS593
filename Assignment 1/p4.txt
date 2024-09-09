@@ -1,0 +1,1 @@
+Write a Java program to input day number (n) and display the corresponding name of the day, where 1 means Monday and 7 means Sunday. The above steps will be repeated until day number is entered as 0 as illustrated in the example. Display "ERROR" for any other n.

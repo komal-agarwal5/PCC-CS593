@@ -1,0 +1,64 @@
+Write a Java program to input n and add n number of integers. In case of InputMismatchException, display "ERROR". 
+
+Click here for a sample program for handling this type of exceptions.
+
+Click here for another sample for creating your customized exception class.
+
+Avoid using any input or output prompts.
+
+
+sample 1
+
+/*
+	Program: TestExc.java
+	Purpose: Exception occurs when the program is expecting an integer input from nextInt() method, but the user entered a string:
+	Exception in thread "main" java.util.InputMismatchException
+	
+	Use a try-catch block for handling this exception.
+*/
+
+import java.util.*;
+
+class TestExc {
+	public static void main( String args[] ) {
+		int num = 0;	
+		String input;
+		Scanner sc = new Scanner(System.in);
+
+		try { 
+			num = sc.nextInt(); 
+			System.out.println("Entered number: " + num); 
+		}
+		catch (InputMismatchException e) { 
+			input = sc.nextLine();
+			System.out.println( input + ": Not a number!" ); 
+		}
+
+		sc.close();
+	}
+}
+
+sample 2
+
+import java.util.*;
+
+class MyException extends Exception {
+    public MyException(String message) { 
+		super(message); 
+	}
+}
+
+public class TestException2 {
+    public static void main(String[] args) {
+        try {
+            int num = 10;	/* Assign positive or negative number */
+            if (num < 0) {
+                throw new MyException("Number cannot be negative");
+            }
+            System.out.println("Number is positive: " + num);
+        } 
+		catch (MyException e) {
+            System.out.println("Caught a custom exception: " + e.getMessage());
+        }
+    }
+}

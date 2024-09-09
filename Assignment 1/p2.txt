@@ -1,0 +1,16 @@
+Write a Java program to input user's name and greet the user as stated in the example. Study the given partial code, fill-in the required code and apply your understanding in solving the next problem.
+
+
+
+Ensure to declare the main class as public. Obviously, main class is the class with main() method.
+
+
+
+Notes:
+
+1. Display output as instructed. Avoid displaying extra characters while taking input or displaying output. No need of providing input and output prompts, which are otherwise needed for an interactive program.
+
+
+2. Ensure to indent all programs properly so that the blocks in the overall program are highly readable and each block can be distinguished from others. Please ensure to write 1-2 comments in small programs and more while writing medium to large programs. 
+
+3. Powered with Programming Assistant Grading Assistant (PAGA) solution by UD. This will be used for automatically checking your assignments and giving feedback. Press "Check" only when you are ready and satisfied with your own code.
