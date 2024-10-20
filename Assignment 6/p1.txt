@@ -1,0 +1,5 @@
+Develop a graphic window for taking inputs of admission counts thru fields "CSE" and "CSBS", and a "Submit" button. When the button is pressed, counts should be added and total should be displayed in the same window. You can submit these counts only once and cannot change the counts after submitting. Perform basic validations for the count fields.
+
+Ensure to write your program on the local machine, compile and run. Finally paste the program here and submit. 
+
+If you get compilation errors, you need to obviously modify the program and re-submit. If you get "X11" runtime error, your program is eligible for testing and you should call the invigilators for manually testing your program. After the evaluation is completed, delete your files from the local machine.

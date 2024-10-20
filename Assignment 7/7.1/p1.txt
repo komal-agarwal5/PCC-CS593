@@ -1,0 +1,7 @@
+Study the partial program carefully which is responsible for inputting a few numbers, populate an array list, sort in descending order and perform binary search in the sorted list for the entered key.
+
+You are required to supply the full program including the missing part in the answer window matching the expected outputs. 
+
+You can also click here to download the part program for necessary modifications and testing. Ensure to delete all your local files if created.
+
+Hints: Use Iterator Design pattern.
