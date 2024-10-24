@@ -1,0 +1,11 @@
+Using built-in Java Stack class, write a Java program to develop a Generic stack of size 5, input choice and process as follows:
+
+1: Push element
+
+2: Pop element and display
+
+0. Quit
+
+
+
+When stack capacity is 5, display [Full-5] after detecting stack full exception and display [Empty] after detecting stack empty exception. Testing of this Generic Stack will be done with String elements.
